@@ -3,25 +3,25 @@
 @font-face {
   font-family: 'empikPro-Bold';
   src: local('empikPro-Bold'),
-    url('../fonts/empikPro-Bold.woff2') format('woff2');
+    url('./fonts/empikPro-Bold.woff2') format('woff2');
 }
 
 @font-face {
   font-family: 'empikPro-Light';
   src: local('empikPro-Light'),
-    url('../fonts/empikPro-Light.woff2') format('woff2');
+    url('./fonts/empikPro-Light.woff2') format('woff2');
 }
 
 @font-face {
   font-family: 'empikPro-Black';
   src: local('empikPro-Black'),
-    url('../fonts/empikPro-Black.woff2') format('woff2');
+    url('./fonts/empikPro-Black.woff2') format('woff2');
 }
 
 @font-face {
   font-family: 'empikPro-Book';
   src: local('empikPro-Book'),
-    url('../fonts/empikPro-Book.woff2') format('woff2');
+    url('./fonts/empikPro-Book.woff2') format('woff2');
 }
 
 
@@ -50,7 +50,7 @@ $white: #fff;
   color: $blue;
   background: #EBE6E1;
   container-type: inline-size;
-  container-name: rc-content;  
+  container-name: es-rc-content;
 
   * {
     -webkit-box-sizing: border-box;
@@ -79,6 +79,7 @@ $white: #fff;
     text-align: center;
     font-family: $font-bold;
     font-size: 25px;
+    color: $blue;
   }
 
   .es-text {
@@ -124,11 +125,12 @@ $white: #fff;
           font-family: $font-black; 
           font-size: 30px;
           text-transform: uppercase;
-
+          color: $blue;
         }
 
         .es-kv__p {
           margin-top: 30px;
+          color: $blue;
         }
 
         .es-kv__p--bold {
@@ -155,6 +157,10 @@ $white: #fff;
     margin-top: 25px;
     margin-bottom: 45px;
     color: $white;
+
+    .es-h2 {
+      color: $white;
+    }
 
     &__background {
       background-color: $orange;
@@ -225,6 +231,7 @@ $white: #fff;
       text-transform: uppercase;
       font-family: $font-black;
       font-size: 25px;
+      color: $blue;
     }
 
     &__wrapper-outer {
@@ -236,7 +243,7 @@ $white: #fff;
         position: absolute;
         width: 140%;
         height: 110%;
-        top: -5%;
+        top: -1%;
         left: -20%;
         right: 0;
         z-index: 0;
@@ -365,6 +372,7 @@ $white: #fff;
 
           .es-bottle__h2 {
             font-size: 30px;
+            color: $white;
           }
         }
 
@@ -390,6 +398,7 @@ $white: #fff;
 
             .es-bottle__text {
               padding: 0 45px;
+              color: $white;
             }
           }
         }
@@ -535,6 +544,10 @@ $white: #fff;
     text-align: center;
     z-index: 1;
 
+    .es-h2 {
+      color: #ebe6e1;
+    }
+
     &__background {
       background-color: $blue;
       position: absolute;
@@ -613,6 +626,7 @@ $white: #fff;
           &-text {
             margin-bottom: 20px;
             margin-top: 20px;
+            min-height: 7em;
           }
         }
       }
@@ -648,11 +662,16 @@ $white: #fff;
   }
 }
 
-@container rc-content (min-width: 576px) {
+@container es-rc-content (min-width: 576px) {
   #es-rc #es-rc-content {
     .es-one-soda {
       &__wrapper-outer {
         margin-top: -25px;
+      }
+      .es-one-soda__background {
+
+        top: -5%;
+
       }
     }
 
@@ -665,7 +684,7 @@ $white: #fff;
   }
 }
 
-@container rc-content (min-width: 768px) {
+@container es-rc-content (min-width: 768px) {
   #es-rc #es-rc-content {
     .es-kv {
       padding-left: 60px;
@@ -920,7 +939,7 @@ $white: #fff;
     }
 
     .es-end {
-      background-image: url("../images/background.png");
+      background-image: url("./images/background.png");
       background-size: cover;
       background-repeat: no-repeat;
       background-position: center 94%;
@@ -928,7 +947,7 @@ $white: #fff;
   }
 }
 
-@container rc-content (min-width: 980px) {
+@container es-rc-content (min-width: 980px) {
   #es-rc #es-rc-content {
     .es-kv {
       &__wrapper {
@@ -1268,7 +1287,7 @@ $white: #fff;
   }
 }
 
-@container rc-content (min-width: 1100px) {
+@container es-rc-content (min-width: 1100px) {
   #es-rc #es-rc-content {
     .es-bottle__wrapper {
       .es-bottle__single {

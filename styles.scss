@@ -137,6 +137,7 @@ $white: #fff;
         .es-kv__p--bold {
           font-family: $font-bold;
           margin-top: 25px;
+          color: $blue;
         }
       }
 
@@ -290,6 +291,7 @@ $white: #fff;
     &__text {
       width: 80%;
       margin-bottom: 30px;
+      color: $blue;
     }
 
     &__background-text {
@@ -336,6 +338,7 @@ $white: #fff;
         &-text {
           text-align: center;
           margin-top: 25px;
+          color: $blue;
         }
       }
     }
